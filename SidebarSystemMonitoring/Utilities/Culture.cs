@@ -8,7 +8,7 @@ using SidebarSystemMonitoring.Framework;
 
 namespace SidebarSystemMonitoring.Utilities;
 
-public class Culture
+public static class Culture
 {
     public const string DEFAULT = "Default";
 
