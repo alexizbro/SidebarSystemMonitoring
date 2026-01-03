@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Threading;
-using SidebarDiagnostics.Windows;
+using SidebarSystemMonitoring.Windows;
 
-namespace SidebarDiagnostics
+namespace SidebarSystemMonitoring
 {
     /// <summary>
     /// Interaction logic for Dummy.xaml

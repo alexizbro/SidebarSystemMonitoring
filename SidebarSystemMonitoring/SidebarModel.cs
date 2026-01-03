@@ -1,10 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Threading;
-using SidebarDiagnostics.Monitoring;
-using SidebarDiagnostics.Utilities;
+using SidebarSystemMonitoring.Monitoring;
+using SidebarSystemMonitoring.Utilities;
 
-namespace SidebarDiagnostics.Models
+namespace SidebarSystemMonitoring.Models
 {
     public class SidebarModel : INotifyPropertyChanged, IDisposable
     {

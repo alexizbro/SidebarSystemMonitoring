@@ -1,10 +1,10 @@
-<h1><img src="https://cdn.rawgit.com/ArcadeRenegade/SidebarDiagnostics/master/sidebar.ico" width="64" height="64" /> Sidebar Diagnostics</h1>
+<h1><img src="https://raw.githubusercontent.com/alexizbro/SidebarSystemMonitoring/refs/heads/master/sidebar.ico" width="64" height="64" /> Sidebar System Monitoring</h1>
 
-A simple sidebar for Windows desktop that displays hardware diagnostic information.
+A simple sidebar for Windows desktop that displays hardware monitoring information.
 
 ### Download
 
-Go to the <a href="https://github.com/thewriteway/SidebarDiagnostics/releases">releases tab</a>.
+Go to the <a href="https://github.com/alexizbro/SidebarSystemMonitoring/releases">releases tab</a>.
 
 ### Features
 * Monitors CPU, RAM, GPU, network, and logical drives.
@@ -17,7 +17,7 @@ Go to the <a href="https://github.com/thewriteway/SidebarDiagnostics/releases">r
 
 ### Important
 
-If you are changing your screen's DPI settings, <a href="https://github.com/ArcadeRenegade/SidebarDiagnostics/wiki/DPI-Settings">view this page!</a>
+If you are changing your screen's DPI settings, <a href="https://github.com/alexizbro/SidebarSystemMonitoring/wiki/DPI-Settings">view this page!</a>
 
 ### Author Note
 

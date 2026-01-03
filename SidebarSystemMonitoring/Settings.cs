@@ -3,11 +3,10 @@ using System.IO;
 using System.ComponentModel;
 using Newtonsoft.Json;
 using SidebarSystemMonitoring.Utilities;
-using SidebarDiagnostics.Utilities;
-using SidebarDiagnostics.Monitoring;
-using SidebarDiagnostics.Windows;
+using SidebarSystemMonitoring.Monitoring;
+using SidebarSystemMonitoring.Windows;
 
-namespace SidebarDiagnostics.Framework
+namespace SidebarSystemMonitoring.Framework
 {
     [JsonObject(MemberSerialization.OptIn)]
     public sealed class Settings : INotifyPropertyChanged

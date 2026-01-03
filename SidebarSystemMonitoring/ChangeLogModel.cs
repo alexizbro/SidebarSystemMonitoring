@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
 using SidebarSystemMonitoring.Utilities;
-using SidebarDiagnostics.Framework;
+using SidebarSystemMonitoring.Framework;
 
 namespace SidebarSystemMonitoring.Models
 {

@@ -4,10 +4,10 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Threading;
-using SidebarDiagnostics.Windows;
-using SidebarDiagnostics.Models;
+using SidebarSystemMonitoring.Windows;
+using SidebarSystemMonitoring.Models;
 
-namespace SidebarDiagnostics
+namespace SidebarSystemMonitoring
 {
     /// <summary>
     /// Interaction logic for Sidebar.xaml

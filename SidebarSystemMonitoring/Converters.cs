@@ -3,9 +3,9 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 using System.Windows.Input;
-using SidebarDiagnostics.Windows;
+using SidebarSystemMonitoring.Windows;
 
-namespace SidebarDiagnostics.Converters
+namespace SidebarSystemMonitoring.Converters
 {
     public class IntToStringConverter : IValueConverter
     {

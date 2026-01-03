@@ -17,5 +17,5 @@
       "packagePatterns": ["*"]
     }
   ],
-  "repositories": ["thewriteway/SidebarDiagnostics"]
+  "repositories": ["alexizbro/SidebarSystemMonitoring"]
 }

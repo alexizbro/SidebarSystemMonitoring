@@ -5,10 +5,10 @@ using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Linq;
 using OxyPlot.Wpf;
-using SidebarDiagnostics.Framework;
-using SidebarDiagnostics.Monitoring;
+using SidebarSystemMonitoring.Framework;
+using SidebarSystemMonitoring.Monitoring;
 
-namespace SidebarDiagnostics.Models
+namespace SidebarSystemMonitoring.Models
 {
     public class GraphModel : INotifyPropertyChanged, IDisposable
     {

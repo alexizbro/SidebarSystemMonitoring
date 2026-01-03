@@ -14,10 +14,10 @@ using System.Windows.Threading;
 using System.Windows.Media;
 using LibreHardwareMonitor.Hardware;
 using Newtonsoft.Json;
-using SidebarDiagnostics.Framework;
+using SidebarSystemMonitoring.Framework;
 using System.Threading.Tasks;
 
-namespace SidebarDiagnostics.Monitoring
+namespace SidebarSystemMonitoring.Monitoring
 {
     public class MonitorManager : INotifyPropertyChanged, IDisposable
     {

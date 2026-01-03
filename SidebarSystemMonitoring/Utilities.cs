@@ -6,10 +6,10 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Markup;
 using Microsoft.Win32.TaskScheduler;
-using SidebarDiagnostics.Framework;
+using SidebarSystemMonitoring.Framework;
 using System.Diagnostics;
 
-namespace SidebarDiagnostics.Utilities
+namespace SidebarSystemMonitoring.Utilities
 {
     public static class Startup
     {

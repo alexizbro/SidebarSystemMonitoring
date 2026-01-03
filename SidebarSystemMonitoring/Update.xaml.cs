@@ -2,11 +2,11 @@
 using System.ComponentModel;
 using System.Windows.Input;
 using System.Windows.Threading;
-using SidebarDiagnostics.Models;
-using SidebarDiagnostics.Windows;
-using SidebarDiagnostics.Style;
+using SidebarSystemMonitoring.Models;
+using SidebarSystemMonitoring.Windows;
+using SidebarSystemMonitoring.Style;
 
-namespace SidebarDiagnostics
+namespace SidebarSystemMonitoring
 {
     /// <summary>
     /// Interaction logic for Update.xaml

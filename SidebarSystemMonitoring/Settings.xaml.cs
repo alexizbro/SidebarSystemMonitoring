@@ -7,12 +7,12 @@ using System.Windows;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Threading;
-using SidebarDiagnostics.Models;
-using SidebarDiagnostics.Windows;
-using SidebarDiagnostics.Style;
+using SidebarSystemMonitoring.Models;
+using SidebarSystemMonitoring.Windows;
+using SidebarSystemMonitoring.Style;
 using Xceed.Wpf.Toolkit;
 
-namespace SidebarDiagnostics
+namespace SidebarSystemMonitoring
 {
     /// <summary>
     /// Interaction logic for Settings.xaml

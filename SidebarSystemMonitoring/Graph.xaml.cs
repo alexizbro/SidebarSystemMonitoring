@@ -1,12 +1,12 @@
 ﻿using System.Windows.Input;
-using SidebarDiagnostics.Models;
-using SidebarDiagnostics.Windows;
+using SidebarSystemMonitoring.Models;
+using SidebarSystemMonitoring.Windows;
 using System.ComponentModel;
-using SidebarDiagnostics.Style;
+using SidebarSystemMonitoring.Style;
 using Xceed.Wpf.Toolkit;
 using OxyPlot.Wpf;
 
-namespace SidebarDiagnostics
+namespace SidebarSystemMonitoring
 {
     /// <summary>
     /// Interaction logic for Graph.xaml

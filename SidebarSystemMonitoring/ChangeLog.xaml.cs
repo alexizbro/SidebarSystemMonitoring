@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Windows;
-using SidebarDiagnostics.Models;
-using SidebarDiagnostics.Windows;
-using SidebarDiagnostics.Style;
+using SidebarSystemMonitoring.Models;
+using SidebarSystemMonitoring.Windows;
+using SidebarSystemMonitoring.Style;
 using SidebarSystemMonitoring.Models;
 
-namespace SidebarDiagnostics
+namespace SidebarSystemMonitoring
 {
     /// <summary>
     /// Interaction logic for ChangeLog.xaml

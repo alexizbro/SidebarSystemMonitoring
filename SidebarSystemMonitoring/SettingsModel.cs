@@ -5,12 +5,12 @@ using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Windows;
-using SidebarDiagnostics.Utilities;
-using SidebarDiagnostics.Monitoring;
-using SidebarDiagnostics.Windows;
-using SidebarDiagnostics.Framework;
+using SidebarSystemMonitoring.Utilities;
+using SidebarSystemMonitoring.Monitoring;
+using SidebarSystemMonitoring.Windows;
+using SidebarSystemMonitoring.Framework;
 
-namespace SidebarDiagnostics.Models
+namespace SidebarSystemMonitoring.Models
 {
     public class SettingsModel : INotifyPropertyChanged
     {

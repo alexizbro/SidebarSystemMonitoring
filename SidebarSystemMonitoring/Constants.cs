@@ -1,5 +1,5 @@
 ﻿
-namespace SidebarDiagnostics
+namespace SidebarSystemMonitoring
 {
     public static class Constants
     {

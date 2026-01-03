@@ -9,14 +9,14 @@ using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 using Hardcodet.Wpf.TaskbarNotification;
-using SidebarDiagnostics.Monitoring;
-using SidebarDiagnostics.Utilities;
-using SidebarDiagnostics.Windows;
+using SidebarSystemMonitoring.Monitoring;
+using SidebarSystemMonitoring.Utilities;
+using SidebarSystemMonitoring.Windows;
 using Xceed.Wpf.Toolkit;
 using System.Net.Http;
 using Velopack;
 
-namespace SidebarDiagnostics
+namespace SidebarSystemMonitoring
 {
     /// <summary>
     /// Interaction logic for App.xaml

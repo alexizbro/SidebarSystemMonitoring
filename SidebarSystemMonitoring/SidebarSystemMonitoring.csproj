@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <OutputType>WinExe</OutputType>
     <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
 	  <!-- <IsWebBootstrapper>false</IsWebBootstrapper> -->
@@ -25,7 +25,6 @@
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <PlatformTarget>x64</PlatformTarget>
     <Platforms>AnyCPU;x64</Platforms>
-    <RootNamespace>SidebarDiagnostics</RootNamespace>
   </PropertyGroup>
 	<PropertyGroup>
 		<Version>3.7.3</Version>
@@ -42,7 +41,7 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SidebarDiagnostics.App</StartupObject>
+    <StartupObject>SidebarSystemMonitoring.App</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Sidebar.ico</ApplicationIcon>
@@ -51,7 +50,7 @@
     <ManifestCertificateThumbprint>04836BFB55DC45C7D1C31B8EBC2AC038779EDF93</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>SidebarDiagnostics_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>SidebarSystemMonitoring_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
