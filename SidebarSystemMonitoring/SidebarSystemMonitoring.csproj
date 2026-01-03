@@ -102,9 +102,6 @@
     <Resource Include="Sidebar.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LibreHardwareMonitor\LibreHardwareMonitorLib\LibreHardwareMonitorLib.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Remove="Properties\Resources.ru.Designer.cs" />
   </ItemGroup>
 </Project>
