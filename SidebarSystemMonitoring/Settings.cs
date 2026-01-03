@@ -2,10 +2,10 @@
 using System.IO;
 using System.ComponentModel;
 using Newtonsoft.Json;
+using SidebarSystemMonitoring.Utilities;
 using SidebarDiagnostics.Utilities;
 using SidebarDiagnostics.Monitoring;
 using SidebarDiagnostics.Windows;
-using System.Globalization;
 
 namespace SidebarDiagnostics.Framework
 {

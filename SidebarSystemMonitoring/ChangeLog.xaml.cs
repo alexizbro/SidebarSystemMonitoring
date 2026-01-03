@@ -3,6 +3,7 @@ using System.Windows;
 using SidebarDiagnostics.Models;
 using SidebarDiagnostics.Windows;
 using SidebarDiagnostics.Style;
+using SidebarSystemMonitoring.Models;
 
 namespace SidebarDiagnostics
 {

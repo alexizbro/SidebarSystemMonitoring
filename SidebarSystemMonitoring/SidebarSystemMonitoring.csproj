@@ -25,6 +25,7 @@
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <PlatformTarget>x64</PlatformTarget>
     <Platforms>AnyCPU;x64</Platforms>
+    <RootNamespace>SidebarDiagnostics</RootNamespace>
   </PropertyGroup>
 	<PropertyGroup>
 		<Version>3.7.3</Version>
