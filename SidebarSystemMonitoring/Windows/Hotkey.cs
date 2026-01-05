@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Interop;
+using SidebarSystemMonitoring.Windows.Enums;
 
 namespace SidebarSystemMonitoring.Windows;
 

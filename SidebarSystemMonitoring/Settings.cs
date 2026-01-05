@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using SidebarSystemMonitoring.Utilities;
 using SidebarSystemMonitoring.Monitoring;
 using SidebarSystemMonitoring.Windows;
+using SidebarSystemMonitoring.Windows.Enums;
 
 namespace SidebarSystemMonitoring.Framework
 {

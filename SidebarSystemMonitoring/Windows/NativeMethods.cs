@@ -1,6 +1,8 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Text;
+using SidebarSystemMonitoring.Windows.Enums;
+using SidebarSystemMonitoring.Windows.Structs;
 
 namespace SidebarSystemMonitoring.Windows;
 
@@ -25,7 +27,7 @@ internal static class NativeMethods
         internal static extern int RegisterWindowMessage(string msg);
 
         [DllImport("shell32.dll", CallingConvention = CallingConvention.StdCall)]
-        internal static extern UIntPtr SHAppBarMessage(int dwMessage, ref AppBarWindow.APPBARDATA pData);
+        internal static extern UIntPtr SHAppBarMessage(int dwMessage, ref AppBarData pData); //First param may have to be an int
 
         [DllImport("user32.dll")]
         internal static extern bool EnumDisplayMonitors(IntPtr hdc, IntPtr lpRect, Monitor.EnumCallback callback, int dwData);
@@ -61,5 +63,5 @@ internal static class NativeMethods
         internal static extern int GetClassName(IntPtr hwnd, StringBuilder name, int count);
 
         [DllImport("dwmapi.dll")]
-        internal static extern int DwmSetWindowAttribute(IntPtr hwnd, AppBarWindow.DWMWINDOWATTRIBUTE dwmAttribute, IntPtr pvAttribute, uint cbAttribute);
+        internal static extern int DwmSetWindowAttribute(IntPtr hwnd, DwmWindowAttribute dwmAttribute, IntPtr pvAttribute, uint cbAttribute);
     }

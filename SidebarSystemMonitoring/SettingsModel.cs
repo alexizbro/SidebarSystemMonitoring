@@ -8,6 +8,7 @@ using System.Windows;
 using SidebarSystemMonitoring.Utilities;
 using SidebarSystemMonitoring.Monitoring;
 using SidebarSystemMonitoring.Windows;
+using SidebarSystemMonitoring.Windows.Enums;
 using SidebarSystemMonitoring.Framework;
 
 namespace SidebarSystemMonitoring.Models
