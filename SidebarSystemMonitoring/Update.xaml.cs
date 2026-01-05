@@ -3,7 +3,6 @@ using System.ComponentModel;
 using System.Windows.Input;
 using System.Windows.Threading;
 using SidebarSystemMonitoring.Models;
-using SidebarSystemMonitoring.Windows;
 using SidebarSystemMonitoring.Style;
 
 namespace SidebarSystemMonitoring

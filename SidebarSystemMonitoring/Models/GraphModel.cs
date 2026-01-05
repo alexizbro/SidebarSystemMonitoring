@@ -7,6 +7,8 @@ using System.Linq;
 using OxyPlot.Wpf;
 using SidebarSystemMonitoring.Framework;
 using SidebarSystemMonitoring.Monitoring;
+using SidebarSystemMonitoring.Models.Items;
+using SidebarSystemMonitoring.Models.Records;
 
 namespace SidebarSystemMonitoring.Models
 {
@@ -394,31 +396,5 @@ namespace SidebarSystemMonitoring.Models
         private Dictionary<iMetric, ObservableCollection<MetricRecord>> _data { get; set; }
 
         private bool _disposed { get; set; } = false;
-    }
-
-    public class DurationItem
-    {
-        public DurationItem(int seconds, string text)
-        {
-            Seconds = seconds;
-            Text = text;
-        }
-
-        public int Seconds { get; set; }
-
-        public string Text { get; set; }
-    }
-
-    public class MetricRecord
-    {
-        public MetricRecord(double value, DateTime recorded)
-        {
-            Value = value > 0 ? value : 0.001d;
-            Recorded = recorded;
-        }
-
-        public double Value { get; set; }
-
-        public DateTime Recorded { get; set; }
     }
 }

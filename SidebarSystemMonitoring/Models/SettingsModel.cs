@@ -10,6 +10,7 @@ using SidebarSystemMonitoring.Monitoring;
 using SidebarSystemMonitoring.Windows;
 using SidebarSystemMonitoring.Windows.Enums;
 using SidebarSystemMonitoring.Framework;
+using SidebarSystemMonitoring.Models.Items;
 
 namespace SidebarSystemMonitoring.Models
 {
@@ -1016,26 +1017,5 @@ namespace SidebarSystemMonitoring.Models
                 NotifyPropertyChanged("ReserveSpaceKey");
             }
         }
-    }
-
-    public class DockItem
-    {
-        public DockEdge Value { get; set; }
-
-        public string Text { get; set; }
-    }
-
-    public class ScreenItem
-    {
-        public int Index { get; set; }
-
-        public string Text { get; set; }
-    }
-
-    public class TextAlignItem
-    {
-        public TextAlign Value { get; set; }
-
-        public string Text { get; set; }
     }
 }
