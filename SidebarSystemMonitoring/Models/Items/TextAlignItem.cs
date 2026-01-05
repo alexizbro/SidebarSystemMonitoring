@@ -1,4 +1,4 @@
-using SidebarSystemMonitoring.Framework;
+using SidebarSystemMonitoring.Framework.Enums;
 
 namespace SidebarSystemMonitoring.Models.Items;
 

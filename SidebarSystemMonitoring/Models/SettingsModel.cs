@@ -10,7 +10,9 @@ using SidebarSystemMonitoring.Monitoring;
 using SidebarSystemMonitoring.Windows;
 using SidebarSystemMonitoring.Windows.Enums;
 using SidebarSystemMonitoring.Framework;
+using SidebarSystemMonitoring.Framework.Enums;
 using SidebarSystemMonitoring.Models.Items;
+using SidebarSystemMonitoring.Models.Settings;
 
 namespace SidebarSystemMonitoring.Models
 {
