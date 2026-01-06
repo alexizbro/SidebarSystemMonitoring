@@ -13,6 +13,7 @@ using SidebarSystemMonitoring.Framework;
 using SidebarSystemMonitoring.Framework.Enums;
 using SidebarSystemMonitoring.Models.Items;
 using SidebarSystemMonitoring.Models.Settings;
+using SidebarSystemMonitoring.Monitoring.Configs;
 
 namespace SidebarSystemMonitoring.Models
 {

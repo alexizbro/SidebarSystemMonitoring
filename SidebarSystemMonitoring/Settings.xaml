@@ -12,6 +12,7 @@
         xmlns:win="clr-namespace:SidebarSystemMonitoring.Windows"
         xmlns:sty="clr-namespace:SidebarSystemMonitoring.Style"
         xmlns:frame="clr-namespace:SidebarSystemMonitoring.Framework"
+        xmlns:configs="clr-namespace:SidebarSystemMonitoring.Monitoring.Configs"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
         Closing="Window_Closing"
@@ -219,14 +220,14 @@
                         <DataGrid.Columns>
                             <DataGridTemplateColumn Header="{x:Static frame:Resources.SettingsMonitorsColumn1}" HeaderStyle="{StaticResource MonitorGridHeaderCenter}">
                                 <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate DataType="{x:Type monitor:MonitorConfig}">
+                                    <DataTemplate DataType="{x:Type configs:MonitorConfig}">
                                         <CheckBox IsChecked="{Binding Path=Enabled, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTip="{x:Static frame:Resources.SettingsMonitorEnabledTooltip}" />
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>
                             <DataGridTemplateColumn Header="{x:Static frame:Resources.SettingsMonitorsColumn2}" Width="*" HeaderStyle="{StaticResource MonitorGridHeader}">
                                 <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate DataType="{x:Type monitor:MonitorConfig}">
+                                    <DataTemplate DataType="{x:Type configs:MonitorConfig}">
                                         <Label Content="{Binding Path=Name}" VerticalAlignment="Center" />
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
@@ -241,14 +242,14 @@
                                                 <GridView AllowsColumnReorder="False">
                                                     <GridViewColumn Header="{x:Static frame:Resources.SettingsHardwareColumn1}" HeaderContainerStyle="{StaticResource MonitorHardwareHeaderCenter}">
                                                         <GridViewColumn.CellTemplate>
-                                                            <DataTemplate DataType="{x:Type monitor:HardwareConfig}">
+                                                            <DataTemplate DataType="{x:Type configs:HardwareConfig}">
                                                                 <CheckBox IsChecked="{Binding Path=Enabled, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ToolTip="{x:Static frame:Resources.SettingsHardwareEnabledTooltip}" Style="{StaticResource MonitorHardwareCheckbox}" />
                                                             </DataTemplate>
                                                         </GridViewColumn.CellTemplate>
                                                     </GridViewColumn>
                                                     <GridViewColumn Header="{x:Static frame:Resources.SettingsHardwareColumn2}" HeaderContainerStyle="{StaticResource MonitorHardwareHeader}" Width="230">
                                                         <GridViewColumn.CellTemplate>
-                                                            <DataTemplate DataType="{x:Type monitor:HardwareConfig}">
+                                                            <DataTemplate DataType="{x:Type configs:HardwareConfig}">
                                                                 <TextBox Text="{Binding Path=Name, Mode=TwoWay}" Style="{StaticResource MonitorHardwareText}" ToolTip="{x:Static frame:Resources.SettingsHardwareNameTooltip}" />
                                                             </DataTemplate>
                                                         </GridViewColumn.CellTemplate>
@@ -264,7 +265,7 @@
 
                                         <ItemsControl ItemsSource="{Binding Path=Params}" Margin="10">
                                             <ItemsControl.ItemTemplate>
-                                                <DataTemplate DataType="{x:Type monitor:ConfigParam}">
+                                                <DataTemplate DataType="{x:Type configs:ConfigParam}">
                                                     <ContentControl>
                                                         <ContentControl.Style>
                                                             <Style TargetType="{x:Type ContentControl}">

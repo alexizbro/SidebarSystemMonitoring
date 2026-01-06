@@ -8,6 +8,7 @@
         xmlns:frame="clr-namespace:SidebarSystemMonitoring.Framework"
         xmlns:monitor="clr-namespace:SidebarSystemMonitoring.Monitoring"
         xmlns:win="clr-namespace:SidebarSystemMonitoring.Windows"
+        xmlns:interfaces="clr-namespace:SidebarSystemMonitoring.Monitoring.Interfaces"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
         StateChanged="Window_StateChanged"
@@ -155,7 +156,7 @@
                                                     
                                                     <ItemsControl ItemsSource="{Binding Path=Metrics, Mode=OneWay}">
                                                         <ItemsControl.ItemTemplate>
-                                                            <DataTemplate DataType="{x:Type monitor:iMetric}">
+                                                            <DataTemplate DataType="{x:Type interfaces:IMetric}">
                                                                 <DockPanel Style="{StaticResource MetricPanel}">
                                                                     <TextBlock Text="{Binding Path=Label, Mode=OneWay, Converter={StaticResource MetricLabelConverter}}" Style="{StaticResource MetricLabel}" />
                                                                     <TextBlock Text="{Binding Path=Text, Mode=OneWay}" Style="{StaticResource MetricValue}" />
@@ -210,7 +211,7 @@
 
                                                     <ItemsControl ItemsSource="{Binding Path=DriveMetrics, Mode=OneWay}">
                                                         <ItemsControl.ItemTemplate>
-                                                            <DataTemplate DataType="{x:Type monitor:iMetric}">
+                                                            <DataTemplate DataType="{x:Type interfaces:IMetric}">
                                                                 <DockPanel Style="{StaticResource MetricPanel}">
                                                                     <TextBlock Text="{Binding Path=Label, Mode=OneWay, Converter={StaticResource MetricLabelConverter}}" Style="{StaticResource MetricLabel}" />
                                                                     <TextBlock Text="{Binding Path=Text, Mode=OneWay}" Style="{StaticResource MetricValue}" />

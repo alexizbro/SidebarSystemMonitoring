@@ -14,6 +14,7 @@ using SidebarSystemMonitoring.Utilities;
 using SidebarSystemMonitoring.Windows;
 using Xceed.Wpf.Toolkit;
 using System.Net.Http;
+using SidebarSystemMonitoring.Monitoring.Configs;
 using Velopack;
 
 namespace SidebarSystemMonitoring

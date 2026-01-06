@@ -9,6 +9,7 @@ using SidebarSystemMonitoring.Framework;
 using SidebarSystemMonitoring.Monitoring;
 using SidebarSystemMonitoring.Models.Items;
 using SidebarSystemMonitoring.Models.Records;
+using SidebarSystemMonitoring.Monitoring.Interfaces;
 
 namespace SidebarSystemMonitoring.Models
 {
@@ -43,7 +44,7 @@ namespace SidebarSystemMonitoring.Models
                     {
                         _metrics.CollectionChanged -= Metrics_CollectionChanged;
 
-                        foreach (iMetric _metric in _metrics)
+                        foreach (IMetric _metric in _metrics)
                         {
                             _metric.PropertyChanged -= Metric_PropertyChanged;
                         }
@@ -73,11 +74,11 @@ namespace SidebarSystemMonitoring.Models
 
         public void SetupPlot()
         {
-            _data = new Dictionary<iMetric, ObservableCollection<MetricRecord>>();
+            _data = new Dictionary<IMetric, ObservableCollection<MetricRecord>>();
 
             _plot.Series.Clear();
 
-            foreach (iMetric _metric in Metrics)
+            foreach (IMetric _metric in Metrics)
             {
                 ObservableCollection<MetricRecord> _records = new ObservableCollection<MetricRecord>();
 
@@ -121,7 +122,7 @@ namespace SidebarSystemMonitoring.Models
             }
         }
 
-        private void BindHardware(iMonitor[] monitors)
+        private void BindHardware(IMonitor[] monitors)
         {
             HardwareItems = monitors;
 
@@ -135,17 +136,17 @@ namespace SidebarSystemMonitoring.Models
             }
         }
 
-        private void BindMetrics(iMetric[] metrics)
+        private void BindMetrics(IMetric[] metrics)
         {
             MetricItems = metrics;
-            Metrics = new ObservableCollection<iMetric>();
+            Metrics = new ObservableCollection<IMetric>();
         }
 
         private void Metrics_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             if (e.OldItems != null)
             {
-                foreach (iMetric _metric in e.OldItems)
+                foreach (IMetric _metric in e.OldItems)
                 {
                     _metric.PropertyChanged -= Metric_PropertyChanged;
                 }
@@ -158,7 +159,7 @@ namespace SidebarSystemMonitoring.Models
         {
             if (_disposed)
             {
-                (sender as iMetric).PropertyChanged -= Metric_PropertyChanged;
+                (sender as IMetric).PropertyChanged -= Metric_PropertyChanged;
                 return;
             }
 
@@ -167,7 +168,7 @@ namespace SidebarSystemMonitoring.Models
                 return;
             }
 
-            iMetric _metric = (iMetric)sender;
+            IMetric _metric = (IMetric)sender;
 
             if (_data == null || !_data.ContainsKey(_metric))
             {
@@ -240,7 +241,7 @@ namespace SidebarSystemMonitoring.Models
 
                 if (_monitor == null)
                 {
-                    BindHardware(new iMonitor[0]);
+                    BindHardware(new IMonitor[0]);
                 }
                 else
                 {
@@ -251,9 +252,9 @@ namespace SidebarSystemMonitoring.Models
             }
         }
 
-        private iMonitor[] _hardwareItems { get; set; }
+        private IMonitor[] _hardwareItems { get; set; }
 
-        public iMonitor[] HardwareItems
+        public IMonitor[] HardwareItems
         {
             get
             {
@@ -267,9 +268,9 @@ namespace SidebarSystemMonitoring.Models
             }
         }
 
-        private iMonitor _hardware { get; set; }
+        private IMonitor _hardware { get; set; }
 
-        public iMonitor Hardware
+        public IMonitor Hardware
         {
             get
             {
@@ -281,7 +282,7 @@ namespace SidebarSystemMonitoring.Models
 
                 if (_hardware == null)
                 {
-                    BindMetrics(new iMetric[0]);
+                    BindMetrics(new IMetric[0]);
 
                     Title = Resources.GraphTitle;
                 }
@@ -296,9 +297,9 @@ namespace SidebarSystemMonitoring.Models
             }
         }
 
-        private iMetric[] _metricItems { get; set; }
+        private IMetric[] _metricItems { get; set; }
 
-        public iMetric[] MetricItems
+        public IMetric[] MetricItems
         {
             get
             {
@@ -312,9 +313,9 @@ namespace SidebarSystemMonitoring.Models
             }
         }
 
-        private ObservableCollection<iMetric> _metrics { get; set; }
+        private ObservableCollection<IMetric> _metrics { get; set; }
 
-        public ObservableCollection<iMetric> Metrics
+        public ObservableCollection<IMetric> Metrics
         {
             get
             {
@@ -324,7 +325,7 @@ namespace SidebarSystemMonitoring.Models
             {
                 if (_metrics != null)
                 {
-                    foreach (iMetric _metric in _metrics)
+                    foreach (IMetric _metric in _metrics)
                     {
                         _metric.PropertyChanged -= Metric_PropertyChanged;
                     }
@@ -393,7 +394,7 @@ namespace SidebarSystemMonitoring.Models
 
         private Plot _plot { get; set; }
 
-        private Dictionary<iMetric, ObservableCollection<MetricRecord>> _data { get; set; }
+        private Dictionary<IMetric, ObservableCollection<MetricRecord>> _data { get; set; }
 
         private bool _disposed { get; set; } = false;
     }
