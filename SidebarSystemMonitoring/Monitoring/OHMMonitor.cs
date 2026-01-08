@@ -375,6 +375,27 @@ public class OHMMonitor : BaseMonitor
                 }
             }
 
+            if (metrics.IsEnabled(MetricKey.GPUVRAMUsed))
+            {
+                ISensor _memoryUsed = _hardware.Sensors.Where(s => (s.SensorType == SensorType.Data || s.SensorType == SensorType.SmallData) && s.Name == "GPU Memory Used").FirstOrDefault();
+                
+                if (_memoryUsed != null)
+                {
+                    _sensorList.Add(new GpuVramUsedMetric(_memoryUsed, MetricKey.GPUVRAMUsed, DataType.Gigabyte, null, roundAll));
+                }
+            }
+            
+            if (metrics.IsEnabled(MetricKey.GPUVRAMFree))
+            {
+                ISensor _memoryUsed = _hardware.Sensors.Where(s => (s.SensorType == SensorType.Data || s.SensorType == SensorType.SmallData) && s.Name == "GPU Memory Used").FirstOrDefault();
+                ISensor _memoryTotal = _hardware.Sensors.Where(s => (s.SensorType == SensorType.Data || s.SensorType == SensorType.SmallData) && s.Name == "GPU Memory Total").FirstOrDefault();
+                
+                if (_memoryUsed != null && _memoryTotal != null)
+                {
+                    _sensorList.Add(new GpuVramFreeMetric(_memoryUsed, _memoryTotal, MetricKey.GPUVRAMFree, DataType.Gigabyte, null, roundAll));
+                }
+            }
+
             if (metrics.IsEnabled(MetricKey.GPUVoltage))
             {
                 ISensor _voltage = _hardware.Sensors.Where(s => s.SensorType == SensorType.Voltage && s.Index == 0).FirstOrDefault();

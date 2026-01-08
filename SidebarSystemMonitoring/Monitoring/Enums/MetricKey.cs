@@ -22,6 +22,8 @@ public enum MetricKey : byte
     GPUVRAMClock = 12,
     GPUCoreLoad = 13,
     GPUVRAMLoad = 14,
+    GPUVRAMUsed = 28,
+    GPUVRAMFree = 29,
     GPUVoltage = 15,
     GPUTemp = 16,
     GPUFan = 17,

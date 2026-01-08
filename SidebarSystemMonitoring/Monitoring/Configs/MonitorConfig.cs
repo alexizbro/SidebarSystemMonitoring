@@ -279,14 +279,16 @@ public class MonitorConfig : INotifyPropertyChanged, ICloneable
                     Enabled = true,
                     Order = 3,
                     Hardware = new HardwareConfig[0],
-                    Metrics = new MetricConfig[7]
+                    Metrics = new MetricConfig[9]
                     {
                         new MetricConfig(MetricKey.GPUCoreClock, true),
-                        new MetricConfig(MetricKey.GPUVRAMClock, true),
                         new MetricConfig(MetricKey.GPUCoreLoad, true),
-                        new MetricConfig(MetricKey.GPUVRAMLoad, true),
                         new MetricConfig(MetricKey.GPUVoltage, true),
                         new MetricConfig(MetricKey.GPUTemp, true),
+                        new MetricConfig(MetricKey.GPUVRAMClock, true),
+                        new MetricConfig(MetricKey.GPUVRAMLoad, true),
+                        new MetricConfig(MetricKey.GPUVRAMUsed, true),
+                        new MetricConfig(MetricKey.GPUVRAMFree, true),
                         new MetricConfig(MetricKey.GPUFan, true)
                     },
                     Params = new ConfigParam[5]

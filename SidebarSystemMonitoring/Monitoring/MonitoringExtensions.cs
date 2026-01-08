@@ -109,6 +109,12 @@ public static class Extensions
 
             case MetricKey.GPUVRAMLoad:
                 return Resources.GPUVRAMLoad;
+            
+            case MetricKey.GPUVRAMUsed:
+                return Resources.GPUVRAMUsed;
+            
+            case MetricKey.GPUVRAMFree:
+                return Resources.GPUVRAMFree;
 
             case MetricKey.GPUVoltage:
                 return Resources.GPUVoltage;
@@ -202,6 +208,12 @@ public static class Extensions
 
             case MetricKey.GPUVRAMLoad:
                 return Resources.GPUVRAMLoadLabel;
+            
+            case MetricKey.GPUVRAMUsed:
+                return Resources.GPUVRAMUsedLabel;
+            
+            case MetricKey.GPUVRAMFree:
+                return Resources.GPUVRAMFreeLabel;
 
             case MetricKey.GPUVoltage:
                 return Resources.GPUVoltageLabel;
