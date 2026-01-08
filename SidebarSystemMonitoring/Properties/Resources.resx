@@ -1040,4 +1040,16 @@
     <value>Shows the name of the computer.</value>
     <comment>Settings show machine name tooltip</comment>
   </data>
+  <data name="GPUVRAMUsed" xml:space="preserve">
+    <value>Used</value>
+  </data>
+  <data name="GPUVRAMUsedLabel" xml:space="preserve">
+    <value>Used</value>
+  </data>
+  <data name="GPUVRAMFree" xml:space="preserve">
+    <value>Free</value>
+  </data>
+  <data name="GPUVRAMFreeLabel" xml:space="preserve">
+    <value>Free</value>
+  </data>
 </root>

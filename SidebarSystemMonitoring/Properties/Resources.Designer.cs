@@ -634,6 +634,42 @@ namespace SidebarSystemMonitoring.Framework {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to VRAM Used.
+        /// </summary>
+        public static string GPUVRAMUsed {
+            get {
+                return ResourceManager.GetString("GPUVRAMUsed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VRAM Used.
+        /// </summary>
+        public static string GPUVRAMUsedLabel {
+            get {
+                return ResourceManager.GetString("GPUVRAMUsedLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VRAM Free.
+        /// </summary>
+        public static string GPUVRAMFree {
+            get {
+                return ResourceManager.GetString("GPUVRAMFree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VRAM Free.
+        /// </summary>
+        public static string GPUVRAMFreeLabel {
+            get {
+                return ResourceManager.GetString("GPUVRAMFreeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Config.
         /// </summary>
         public static string GraphConfigSectionTitle {
